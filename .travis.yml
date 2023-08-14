@@ -1,0 +1,10 @@
+language: python
+python:
+    - 3.6
+install:
+  - pip install -U pipenv
+  - pipenv install --dev
+script:
+  - pytest
+services:
+  - mongodb
